@@ -6,7 +6,7 @@ exports.up = function (knex) {
         table.decimal('value').notNullable();
 
         table.integer('movimento_id').notNullable();
-        table.timestamps();
+        table.timestamps(false, true);
 
         table.foreign('movimento_id').references('id').inTable('movimentos');
     });
