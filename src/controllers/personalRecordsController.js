@@ -9,7 +9,6 @@ module.exports = {
         const personalRecordId = await connection('personalRecords').insert({
             value,
             movimento_id,
-            created_at
         });
         return response.json(personalRecordId);
     },
