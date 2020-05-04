@@ -4,7 +4,7 @@ module.exports = {
     async create(request, response) {
         const { value } = request.body;
         const movimento_id = request.headers.movimento_id;
-        const created_at = Date.now();
+        //const created_at = Date.now();
 
         const personalRecordId = await connection('personalRecords').insert({
             value,
